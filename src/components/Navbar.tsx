@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import MobileNav from "./MobileNav"
+import MobileNav from "./MobileNav";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+
 // import yoomlogo from "../../public/icons/yoom-logo.svg";
 
 const Navbar = () => {
@@ -21,6 +23,12 @@ const Navbar = () => {
       </Link>
       <div className="flex justify-between gap-5 ">
         {/* Clerk Management */}
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
         <MobileNav />
       </div>
     </nav>

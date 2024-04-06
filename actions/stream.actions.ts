@@ -30,5 +30,5 @@ export const tokenProvider = async () => {
 
   const token = client.createToken(user.id, exp, issued);
 
-  return token
+  return token;
 };

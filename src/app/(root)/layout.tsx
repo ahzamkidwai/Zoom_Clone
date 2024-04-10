@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+// import { sidebarLinks } from "../../../constants";
+import { ReactNode } from "react";
 import StreamVideoProvider from "../../../providers/StreamClientProvider";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {

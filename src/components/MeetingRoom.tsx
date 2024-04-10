@@ -1,7 +1,14 @@
 import React from "react";
 
 const MeetingRoom = () => {
-  return <div>MeetingRoom</div>;
+  return (
+    <section className="relative h-screen w-full overflow-hidden pt-4 text-white">
+      <div className="relative flex size-full items-center justify-center">
+
+      </div>
+      Meeting Room
+    </section>
+  );
 };
 
 export default MeetingRoom;
